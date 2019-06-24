@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "871974815936",
+    "firebase_url": "https://easy-locator-e2e74.firebaseio.com",
+    "project_id": "easy-locator-e2e74",
+    "storage_bucket": "easy-locator-e2e74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871974815936:android:b90c457a9fd4cc43",
+        "android_client_info": {
+          "package_name": "com.easy_locater.realtimeloc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871974815936-hesdg45kntk136a2pg86tri6ctsq4ce7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easy_locater.realtimeloc",
+            "certificate_hash": "8f20773b007ee1587dcfa4397fd41fece55d350c"
+          }
+        },
+        {
+          "client_id": "871974815936-atbhlgb4ijss5hsoc8qimtj86rhu3jga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwWCIYIYwPGFrDDZ-B49cJSSQwiJOu6dI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871974815936-atbhlgb4ijss5hsoc8qimtj86rhu3jga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

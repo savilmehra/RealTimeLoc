@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#079BD8</color>
+    <color name="light_blue">#4585f3</color>
+    <color name="IndicatorColor">#FF9500</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="grey">#707070</color>
+    <color name="light_grey">#e5e5e5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="pinkish_red">#fb4f4f</color>
+    <color name="green">#008000</color>
+    <color name="transparent">#00000000</color>
+    <color name="orange">#ff8500</color>
+    <color name="black">#000000</color>
+    <!-- Change after new design -->
+    <color name="text_blue">#4B7DF8</color>
+    <color name="back_textvw">#C6E2FF</color>
+    <color name="txt_light_blue">#4585F3</color>
+    <color name="text_light">#66000000</color>
+    <color name="card_light_text">#ffb5b5b5</color>
+    <color name="card_grid_text">#ff707070</color>
+    <color name="card_border">#ffdedede</color>
+    <color name="accepted">#71C671</color>
+    <color name="red">#FF0000</color>
+    <color name="seperator_grey">#E2E2E2</color>
+    <color name="overlay_higlight">#FFD980</color>
+    <color name="overlay_Expendable_list">#cccccc</color>
+    <!-- changed acc to new design -->
+    <color name="food_order_bg">#ED9220</color>
+    <color name="blue_midtone">#2196f3</color>
+    <!-- changed acc to new design -->
+    <color name="blue_litetone">#0095dd</color>
+    <color name="nav_drawer_text">#000000</color>
+    <color name="dark_sky_blue">#00CCFF</color>
+    <color name="statusbar_color">#1565c0</color>
+
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="step_pager_previous_tab_color">#4433b5e5</color>
+    <color name="step_pager_next_tab_color">#10000000</color>
+    <color name="dark_blue_color">#002147</color>
+    <color name="grey_midtone_dark">#D3D3D3</color>
+    <color name="yellow">#ffbf00</color>
+    <color name="dark_red">#d11717</color>
+
+    <!-- New colors added for UI standardization -->
+    <color name="nav_drawer_bg">#FFFFFF</color>
+    <color name="app_theme_bg">#d8d8d8</color>
+    <color name="home_card_title">#2196f3</color>
+    <color name="light_grey_for_sub_heading">#808080</color>
+    <color name="light_grey_for_sub_text">#999999</color>
+    <color name="light_grey_for_sub_text_value">#4d4d4d</color>
+    <color name="light_grey_for_seperator">#f1f1f1</color>
+    <color name="date_time">#333333</color>
+    <color name="train_number_name">#444444</color>
+    <color name="from_to">#808080</color>
+    <color name="red_background_for_waiting">#d14343</color>
+    <color name="green_background_for_confirm">#009245</color>
+    <color name="text_title">#333333</color>
+    <color name="text_description">#666666</color>
+    <color name="blue_dark_station_code_bck">#00638E</color>
+    <color name="google_red">#dd4b39</color>
+    <color name="happy_green">#39B54A</color>
+    <color name="angry_red">#F94848</color>
+    <color name="neutral_yellow">#FBAE17</color>
+    <color name="meal_info_color_bg">#f2dede</color>
+    <color name="meal_remove">#cccccc</color>
+
+    <color name="card_background_empty_data">#e3f2fd</color>
+    <color name="grey_after_alpha">#88000000</color>
+
+
+    <!-- food theme colors -->
+    <color name="food_theme_status_bar">#9f3f1b</color>
+    <color name="food_theme_toolbar">#f26334</color>
+    <color name="food_theme_bg">#fae6d1</color>
+    <color name="food_dinner">#BBE5FC</color>
+
+    <!-- food theme color ends -->
+
+    <color name="edit_text_border">#979797</color>
+    <color name="hospital_row_background">#f7f7f7</color>
+    <color name="hospital_transparent_background">#80ffffff</color>
+
+
+    <color name="popup_bg_color">#EE666666</color>
+    <color name="separator_color">#BBBBBB</color>
+    <color name="popup_text_color">#FFFFFF</color>
+    <color name="home_meal_msg1_color">#1565C0</color>
+    <color name="home_meal_msg2_color">#F15A24</color>
+    <color name="meal_icon_color">#F15A24</color>
+
+
+    <color name="pure_orange">#fd7400</color>
+    <color name="strong_yellow">#f4bb01</color>
+    <color name="unselected_white">#a3ccf1</color>
+
+
+    <color name="med_yellow">#f99d2a</color>
+    <color name="high_green">#709c15</color>
+    <color name="low_red">#c8393a</color>
+    <color name="app_cord_back">#f1f1f1</color>
+    <color name="black_text">#363636</color>
+    <color name="dark_seperator">#404040</color>
+    <color name="light_seperator">#cccccc</color>
+    <!--<color name="nav_home_icon_color">#595959</color>-->
+    <!--<color name="nav_local_metro_icon_color">#AE7EC4</color>-->
+    <!--<color name="nav_booking_icon_color">#F05A28</color>-->
+    <!--<color name="nav_trains_icon_color">#2196F3</color>-->
+    <!--<color name="nav_divider_and_expend_collepse_color">#E4E4E4</color>-->
+    <!--<color name="nav_text_color">#555555</color>-->
+    <!--<color name="nav_expendable_text_color">#999999</color>-->
+
+    <color name="pnr_offline_card_background">#FFED75</color>
+    <color name="offline_toolbar_color">#A0A0A0</color>
+    <color name="offline_statusbar_color">#77A0A0A0</color>
+    <color name="rush_alert_heading">#757575</color>
+    <color name="rush_alert_icon_color">#f0ad4e</color>
+    <color name="loader_header">#6bd99c</color>
+
+</resources>

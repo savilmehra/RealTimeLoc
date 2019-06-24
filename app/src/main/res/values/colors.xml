@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFCA28</color>
+    <color name="colorPrimaryDark">#FFC107</color>
+    <color name="colorAccent">@android:color/black</color>
+    <color name="contact_name">#333333</color>
+    <color name="contact_number">#8c8c8c</color>
+</resources>

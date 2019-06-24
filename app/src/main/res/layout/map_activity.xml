@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+        <fragment
+                android:id="@+id/map1"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+        />
+        <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="56dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/activity_margin"
+                android:checked="false"
+        />
+    </FrameLayout>
+    <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            ads:adUnitId="ca-app-pub-4164184164875270/6234194533" tools:ignore="MissingConstraints">
+
+    </com.google.android.gms.ads.AdView>
+</android.support.constraint.ConstraintLayout>

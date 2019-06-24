@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:fitsSystemWindows="true">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+        <ImageView android:src="@drawable/route"
+                   android:layout_width="wrap_content"
+                   android:layout_height="72dp"
+                   android:layout_marginBottom="24dp"
+                   android:layout_gravity="center_horizontal"/>
+
+
+        <!-- Email Label -->
+
+
+        <EditText android:id="@+id/countryCode"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="14sp"
+                  android:gravity="center"
+                  android:layout_gravity="center"
+                  android:padding="@dimen/contact_number"
+
+                  android:layout_margin="8dp"
+                  android:background="@drawable/round_corner_grey_rectangle"
+                  android:hint="Country Code"
+                  android:textColor="@android:color/black"
+                  android:textColorHint="@android:color/black"
+        />
+
+
+        <EditText android:id="@+id/et_phone_number"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="number"
+                  android:layout_margin="8dp"
+                  android:textSize="14sp"
+                  android:padding="@dimen/contact_number"
+                  android:background="@drawable/round_corner_grey_rectangle"
+                  android:textColor="@android:color/black"
+                  android:textColorHint="@android:color/black"
+                  android:gravity="center_horizontal"
+                  android:hint="Phone No."/>
+
+
+        <EditText android:id="@+id/et_otp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_horizontal"
+                  android:inputType="number"
+                  android:layout_margin="8dp"
+                  android:textSize="14sp"
+                  android:padding="@dimen/contact_number"
+                  android:textColor="@android:color/black"
+                  android:textColorHint="@android:color/black"
+                  android:background="@drawable/round_corner_grey_rectangle"
+                  android:hint="OTP"/>
+
+
+        <!-- Password Label -->
+
+        <EditText android:id="@+id/input_password"
+                  android:layout_width="match_parent"
+                  android:background="@drawable/round_corner_grey_rectangle"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_horizontal"
+                  android:padding="@dimen/contact_number"
+                  android:textColor="@android:color/black"
+                  android:layout_margin="8dp"
+                  android:textSize="14sp"
+                  android:visibility="gone"
+                  android:textColorHint="@android:color/black"
+                  android:inputType="textPassword"
+                  android:hint="Password"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_sign_in"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/buttonbackground"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:visibility="gone"
+                android:textColor="@android:color/white"
+                android:text="Login"/>
+
+        <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_generate_otp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:background="@drawable/buttonbackground"
+                android:textColor="@android:color/white"
+                android:text="Generate OTP"/>
+
+        <TextView android:id="@+id/link_signup"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="24dp"
+                  android:text="No account yet? Create one"
+                  android:gravity="center"
+                  android:visibility="gone"
+                  android:textSize="16dip"/>
+
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/policy"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="24dp"
+              android:layout_gravity="bottom"
+              android:text="By using this app you are agree to our privacy policy"
+              android:gravity="center|bottom"
+              android:layout_alignParentBottom="true"
+              android:textColor="@android:color/holo_red_dark"
+              android:visibility="visible"
+              android:textSize="10dip"/>
+</RelativeLayout>

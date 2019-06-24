@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools" package="com.easy_locater.realtimeloc">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.PERMISSIONS_REQUEST_READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.truiton.supportmapfragment.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <application
+            android:name="com.easy_locater.realtimeloc.MyApplication"
+            android:largeHeap="true"
+            android:allowBackup="true"
+            android:icon="@drawable/route"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+
+            android:theme="@style/AppTheme" tools:ignore="GoogleAppIndexingWarning">
+
+        <uses-library
+                android:name="org.apache.http.legacy"
+                android:required="false"/>
+        <activity
+                android:name="com.easy_locater.realtimeloc.HomeActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <meta-data
+                android:name="io.fabric.ApiKey"
+                android:value="ac00f6e1e687b5021124aed4f9560ce6700cfc95"/>
+        <activity
+                android:name="com.easy_locater.realtimeloc.MapsActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <service android:name="com.easy_locater.realtimeloc.NewsCheckingService"
+                 android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE"
+                 android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <activity
+                android:name="com.easy_locater.realtimeloc.SignUpAcitvity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.easy_locater.realtimeloc.UsersOfAppActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.app.searchable"
+                    android:resource="@xml/searchable"/>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.easy_locater.realtimeloc.Webview"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+                android:name="com.easy_locater.realtimeloc.ExitScreen"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+        <activity
+                android:name="com.easy_locater.realtimeloc.MainHomePageActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+                android:name="com.easy_locater.realtimeloc.SplaceScreenActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyDWv75mZjT0FoUZE-NxxYqOJ4c4xLZLUhY"/>
+
+
+        <service android:name="com.easy_locater.realtimeloc.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+
+
+
+        <service android:name="com.easy_locater.realtimeloc.OfflineLocationActivity"
+                 android:exported="true"
+                 android:permission="android.permission.BIND_JOB_SERVICE">
+
+        </service>
+        <service android:name="com.easy_locater.realtimeloc.NewService"
+                 android:exported="true"
+                 android:permission="android.permission.BIND_JOB_SERVICE">
+
+        </service>
+
+
+        <receiver android:name="com.easy_locater.realtimeloc.AlarmNew">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.easy_locater.realtimeloc.GetLocationService"
+                 android:exported="true"
+                 android:permission="android.permission.BIND_JOB_SERVICE">
+
+        </service>
+        <receiver android:process=":remote" android:name="com.easy_locater.realtimeloc.AlarmOffline"></receiver>
+
+        <receiver android:name="com.easy_locater.realtimeloc.AutoStart">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.easy_locater.realtimeloc.CommonAppService" />
+        <receiver android:name="com.easy_locater.realtimeloc.Alarm"></receiver>
+        <receiver android:name="com.easy_locater.realtimeloc.OfflineAlarm"
+                  android:enabled="true"
+        ></receiver>
+        <receiver android:name="com.easy_locater.realtimeloc.AlarmMap"></receiver>
+        <receiver android:name="com.easy_locater.realtimeloc.MyStartServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
